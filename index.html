@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F7F4EC">
+  <meta name="description" content="Privacy Policy for True or False: Sports">
+  <title>Privacy Policy — True or False: Sports</title>
+
+  <style>
+    :root {
+      --bg: #F7F4EC;
+      --bg-start: #F8F5EE;
+      --bg-middle: #EEF3F2;
+      --surface: #FFFFFF;
+      --surface-alt: #ECE7DC;
+      --accent: #D6452E;
+      --accent-dark: #8E2A1E;
+      --accent-light: #E4572E;
+      --text: #17212B;
+      --muted: #4A5866;
+      --hint: #6B7785;
+      --border: #D8DEE4;
+      --gold: #C58B12;
+      --shadow: 0 12px 34px rgba(23, 33, 43, .10);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(
+          circle at 8% 0%,
+          rgba(228, 87, 46, .18),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 95% 15%,
+          rgba(127, 184, 201, .20),
+          transparent 28rem
+        ),
+        linear-gradient(
+          145deg,
+          var(--bg-start),
+          var(--bg-middle) 48%,
+          var(--bg)
+        );
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 30px 0 48px;
+    }
+
+    header {
+      position: relative;
+      overflow: hidden;
+      padding: 30px clamp(22px, 5vw, 46px);
+      border: 1px solid rgba(214, 69, 46, .18);
+      border-radius: 26px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #EEF3F2 100%);
+      box-shadow: var(--shadow);
+    }
+
+    header::after {
+      content: "⚽";
+      position: absolute;
+      right: 12px;
+      bottom: -58px;
+      color: rgba(214, 69, 46, .09);
+      font-size: 210px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      flex: 0 0 52px;
+      width: 52px;
+      height: 52px;
+      border-radius: 17px;
+      color: #fff;
+      font-size: 27px;
+      background: linear-gradient(145deg, #E4572E, #8E2A1E);
+      box-shadow: 0 6px 15px rgba(214, 69, 46, .22);
+    }
+
+    .studio {
+      color: var(--muted);
+      font-size: .86rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .edition {
+      font-size: .95rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 22px 0 8px;
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      line-height: 1.12;
+      letter-spacing: -.04em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .subtitle {
+      max-width: 650px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pill {
+      padding: 6px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--accent-dark);
+      background: rgba(255, 255, 255, .86);
+      font-size: .82rem;
+      font-weight: 650;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin: 18px 0;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      box-shadow: 0 4px 14px rgba(23, 33, 43, .06);
+    }
+
+    .lang-switch button {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 16px;
+      font: inherit;
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .lang-switch button[aria-pressed="true"] {
+      color: white;
+      background: var(--accent);
+    }
+
+    main {
+      display: grid;
+      gap: 14px;
+    }
+
+    section {
+      padding: 22px clamp(20px, 4vw, 32px);
+      border: 1px solid rgba(214, 69, 46, .13);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 5px 20px rgba(23, 33, 43, .045);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: var(--accent-dark);
+      font-size: 1.18rem;
+      line-height: 1.35;
+    }
+
+    p { margin: 8px 0; }
+
+    ul {
+      padding-left: 1.25rem;
+      margin: 8px 0;
+    }
+
+    li { margin: 5px 0; }
+
+    a {
+      color: var(--accent);
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      border-left: 4px solid var(--accent);
+      background: #FFF0E9;
+    }
+
+    footer {
+      padding: 24px 10px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    [hidden] { display: none !important; }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(100% - 20px, 920px);
+        padding-top: 10px;
+      }
+
+      header {
+        border-radius: 20px;
+        padding: 23px 20px;
+      }
+
+      section {
+        border-radius: 16px;
+        padding: 19px 18px;
+      }
+
+      .logo {
+        width: 46px;
+        height: 46px;
+        flex-basis: 46px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">⚽</div>
+      <div>
+        <div class="studio">ABVSoft</div>
+        <div class="edition" data-en>Sports Quiz</div>
+        <div class="edition" data-ru hidden>
+          Спортивная викторина
+        </div>
+      </div>
+    </div>
+
+    <h1 data-en>Privacy Policy</h1>
+    <h1 data-ru hidden>Политика конфиденциальности</h1>
+
+    <p class="subtitle" data-en>
+      This policy explains how information may be handled when you use
+      True or False: Sports.
+    </p>
+    <p class="subtitle" data-ru hidden>
+      В этой политике объясняется, как может обрабатываться информация
+      при использовании приложения «Правда или ложь: Спорт».
+    </p>
+
+    <div class="meta">
+      <span class="pill">ABVSoft</span>
+      <span class="pill" data-en>Updated: 6 November 2026</span>
+      <span class="pill" data-ru hidden>Обновлено: 6 ноября 2026 г.</span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button id="enBtn" type="button" aria-pressed="true">English</button>
+      <button id="ruBtn" type="button" aria-pressed="false">Русский</button>
+    </div>
+  </div>
+
+  <!-- ENGLISH VERSION -->
+  <main data-en>
+    <section class="notice">
+      <h2>Overview</h2>
+      <p>
+        ABVSoft (“we”, “us”, or “our”) respects your privacy. This policy
+        describes information that may be processed by the app and by
+        third-party services used to support advertising and app functionality.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <p>
+        The app does not require you to create an account. We do not ask you
+        to provide your name, phone number, contacts, or precise GPS location
+        to play the quiz.
+      </p>
+      <p>
+        The app or its third-party SDKs may process technical and usage
+        information, such as app interactions, diagnostics, device or
+        advertising identifiers, approximate location derived from network
+        information, and advertising-related data, depending on your device
+        settings, consent choices, and the services available in your region.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Advertising and Consent</h2>
+      <p>
+        The app may use Yandex Mobile Ads and related mediation or advertising
+        services to display ads. These providers may collect or process data
+        for ad delivery, measurement, fraud prevention, and, where permitted,
+        personalization.
+      </p>
+      <p>
+        Where required, the app provides a consent choice for personalized
+        advertising. You can also review available advertising and privacy
+        controls in the app and in your device settings. The options and legal
+        requirements may vary by region.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. How Information Is Used</h2>
+      <ul>
+        <li>To operate and maintain the app and its features.</li>
+        <li>To remember local app settings and game progress where supported.</li>
+        <li>
+          To display, measure, and improve advertising, subject to applicable
+          consent and settings.
+        </li>
+        <li>To diagnose errors, protect the service, and prevent misuse.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Local Storage</h2>
+      <p>
+        App settings and gameplay data may be stored locally on your device.
+        We do not operate an ABVSoft account system for this app. Uninstalling
+        the app may remove locally stored data; backed-up or platform-managed
+        data may be handled separately by your device provider.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Third-Party Services</h2>
+      <p>
+        Third-party SDKs and services operate under their own privacy policies
+        and terms. Their processing is governed by those policies, not solely
+        by this document. Please review the relevant provider policies,
+        including the policies of Yandex services used in the app.
+      </p>
+      <p>
+        Yandex privacy information:
+        <a href="https://yandex.com/legal/confidential/"
+           target="_blank" rel="noopener noreferrer">Yandex Privacy Policy</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Data Sharing</h2>
+      <p>
+        We do not sell your personal information. Information may be processed
+        by service providers when needed to provide app features, deliver or
+        measure advertising, maintain security, or comply with applicable law.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Data Retention and Security</h2>
+      <p>
+        Data stored locally remains on your device until it is deleted or the
+        app is uninstalled, subject to device and backup behavior. Third-party
+        providers determine retention for data they process under their own
+        policies. We take reasonable steps in the app’s design to limit
+        unnecessary collection, but no method of storage or transmission is
+        completely secure.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Children’s Privacy</h2>
+      <p>
+        The app is not intended to knowingly collect personal information
+        directly from children. Advertising providers and the app’s
+        configuration may apply additional restrictions depending on age,
+        region, and applicable law. If you believe personal information has
+        been provided to us inappropriately, contact us so we can review
+        the matter.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Your Choices</h2>
+      <p>
+        You can manage available consent choices in the app, change your
+        device’s advertising settings, limit ad personalization where
+        supported, or stop using and uninstall the app. Some settings are
+        controlled by third-party platforms and may differ by device or region.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Changes to This Policy</h2>
+      <p>
+        We may update this policy when the app, services, or legal requirements
+        change. The latest version will be published at this page with an
+        updated date.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Contact Us</h2>
+      <p>
+        If you have questions about this Privacy Policy, contact ABVSoft at
+        <a href="mailto:abvsoft.apps@gmail.com">abvsoft.apps@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- RUSSIAN VERSION -->
+  <main data-ru hidden>
+    <section class="notice">
+      <h2>Общая информация</h2>
+      <p>
+        ABVSoft («мы», «нас» или «наш») уважает вашу конфиденциальность.
+        В этой политике описано, какая информация может обрабатываться
+        приложением и сторонними сервисами, используемыми для рекламы
+        и работы приложения.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. Какую информацию мы собираем</h2>
+      <p>
+        Для игры не требуется создавать аккаунт. Мы не просим указывать имя,
+        номер телефона, контакты или точное местоположение GPS.
+      </p>
+      <p>
+        Приложение или сторонние SDK могут обрабатывать технические данные
+        и сведения об использовании, например взаимодействия с приложением,
+        диагностические данные, идентификаторы устройства или рекламы,
+        приблизительное местоположение, определяемое по сетевой информации,
+        и рекламные данные. Это зависит от настроек устройства, вашего
+        согласия и доступных в регионе сервисов.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Реклама и согласие</h2>
+      <p>
+        В приложении могут использоваться Yandex Mobile Ads и связанные
+        с ними посреднические или рекламные сервисы для показа рекламы.
+        Эти поставщики могут обрабатывать данные для показа и измерения
+        эффективности рекламы, предотвращения мошенничества и, если это
+        разрешено, персонализации рекламы.
+      </p>
+      <p>
+        В случаях, когда это требуется, приложение предлагает выбрать,
+        разрешать ли персонализированную рекламу. Доступные параметры можно
+        также проверить в приложении и настройках устройства. Варианты
+        и требования законодательства зависят от региона.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Как используется информация</h2>
+      <ul>
+        <li>Для работы и поддержки приложения и его функций.</li>
+        <li>Для сохранения локальных настроек и игрового прогресса, если это предусмотрено.</li>
+        <li>
+          Для показа и измерения рекламы с учётом применимых требований
+          к согласию и настроек.
+        </li>
+        <li>Для диагностики ошибок, обеспечения безопасности и предотвращения злоупотреблений.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Локальное хранение</h2>
+      <p>
+        Настройки приложения и игровые данные могут храниться непосредственно
+        на устройстве. В приложении нет собственной системы аккаунтов ABVSoft.
+        Удаление приложения может привести к удалению локально сохранённых
+        данных; резервные копии и данные, управляемые платформой, могут
+        обрабатываться отдельно поставщиком устройства.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Сторонние сервисы</h2>
+      <p>
+        Сторонние SDK и сервисы работают в соответствии со своими политиками
+        конфиденциальности и условиями. Обработка данных ими регулируется
+        их собственными документами, а не только этой политикой. Ознакомьтесь
+        с политиками соответствующих поставщиков, включая сервисы Yandex,
+        используемые в приложении.
+      </p>
+      <p>
+        Информация о конфиденциальности Yandex:
+        <a href="https://yandex.com/legal/confidential/"
+           target="_blank" rel="noopener noreferrer">Политика конфиденциальности Yandex</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Передача данных</h2>
+      <p>
+        Мы не продаём ваши персональные данные. Поставщики услуг могут
+        обрабатывать информацию, необходимую для работы функций приложения,
+        показа и измерения рекламы, обеспечения безопасности или соблюдения
+        законодательства.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Хранение и безопасность данных</h2>
+      <p>
+        Локальные данные остаются на устройстве, пока вы их не удалите
+        или не удалите приложение, с учётом особенностей устройства
+        и резервного копирования. Сроки хранения данных у сторонних
+        поставщиков определяются их собственными политиками. Мы стремимся
+        не собирать лишние данные, однако ни один способ хранения или
+        передачи информации не гарантирует абсолютную безопасность.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Конфиденциальность детей</h2>
+      <p>
+        Приложение не предназначено для намеренного сбора персональных данных
+        непосредственно от детей. Рекламные поставщики и настройки приложения
+        могут применять дополнительные ограничения в зависимости от возраста,
+        региона и законодательства. Если вы считаете, что нам были
+        ненадлежащим образом переданы персональные данные, свяжитесь с нами
+        для рассмотрения ситуации.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Ваш выбор</h2>
+      <p>
+        Вы можете управлять доступными настройками согласия в приложении,
+        изменять рекламные настройки устройства, ограничивать персонализацию
+        рекламы, если такая возможность доступна, или прекратить использование
+        приложения и удалить его. Часть настроек контролируется сторонними
+        платформами и может отличаться в зависимости от устройства и региона.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Изменения политики</h2>
+      <p>
+        Мы можем обновлять эту политику при изменении приложения, сервисов
+        или требований законодательства. Актуальная версия будет опубликована
+        на этой странице с указанием даты обновления.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Контакты</h2>
+      <p>
+        Если у вас есть вопросы об этой политике конфиденциальности,
+        напишите в ABVSoft:
+        <a href="mailto:abvsoft.apps@gmail.com">abvsoft.apps@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div data-en>© 2026 ABVSoft. All rights reserved.</div>
+    <div data-ru hidden>© 2026 ABVSoft. Все права защищены.</div>
+  </footer>
+
+</div>
+
+<script>
+  const enButton = document.getElementById('enBtn');
+  const ruButton = document.getElementById('ruBtn');
+
+  function setLanguage(language) {
+    document.documentElement.lang = language;
+
+    document.querySelectorAll('[data-en]').forEach(element => {
+      element.hidden = language !== 'en';
+    });
+
+    document.querySelectorAll('[data-ru]').forEach(element => {
+      element.hidden = language !== 'ru';
+    });
+
+    enButton.setAttribute('aria-pressed', String(language === 'en'));
+    ruButton.setAttribute('aria-pressed', String(language === 'ru'));
+
+    try {
+      localStorage.setItem('sportsPrivacyLanguage', language);
+    } catch (_) {
+      // The page still works if localStorage is unavailable.
+    }
+  }
+
+  enButton.addEventListener('click', () => setLanguage('en'));
+  ruButton.addEventListener('click', () => setLanguage('ru'));
+
+  let initialLanguage =
+    (navigator.language || '').toLowerCase().startsWith('ru') ? 'ru' : 'en';
+
+  try {
+    const savedLanguage =
+      localStorage.getItem('sportsPrivacyLanguage');
+
+    if (savedLanguage === 'en' || savedLanguage === 'ru') {
+      initialLanguage = savedLanguage;
+    }
+  } catch (_) {
+    // Use the browser language if localStorage is unavailable.
+  }
+
+  setLanguage(initialLanguage);
+</script>
+</body>
+</html>
